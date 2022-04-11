@@ -9,3 +9,56 @@ Es:
 ]
 Crea un nuovo array con la lista dei mammiferi.
  */
+
+
+const animalsArray = [
+    {name: 'leone',
+    family: 'felidi',
+    species: 'mammiferi'
+    },
+    {name: 'cane',
+    family: 'canidi',
+    species: 'mammiferi'
+    },
+    {name: 'coccodrillo',
+    family: 'boh',
+    species: 'rettili'
+    },
+    {name: 'dodo',
+    family: 'fasianidi',
+    species: 'uccelli'
+    },
+    {name: 'elefante',
+    family: 'elefantidi',
+    species: 'mammiferi'
+    },
+    {name: 'ragno',
+    family: 'aracnidi',
+    species: 'insetti'
+    },
+    {name: 'puma',
+    family: 'felidi',
+    species: 'mammiferi'
+    },
+    {name: 'gallina',
+    family: 'fasianidi',
+    species: 'uccelli'
+    },
+    {name: 'ornitorinco',
+    family: 'strani',
+    species: 'mammiferi'
+    },
+
+];
+
+
+const mammalsArray = animalsArray.filter(animal => {
+    return animal.species === 'mammiferi'
+})
+
+
+
+console.log(`Array animali totali:`);
+console.log(animalsArray);
+console.log(`Array mammiferi filtrati dall'array iniziale:`);
+console.log(mammalsArray);
